@@ -1,0 +1,257 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: azure;
+  padding: 50px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+li.list-group-item:hover {
+  background-color: azure; /* Warna latar belakang saat hover */
+  color: #333; /* Warna teks saat hover */
+}
+
+.border-container {
+  padding: 80px;
+  width: 100%; /* Lebar border sama dengan lebar layar */
+  height: 100%;
+  border: 4px solid white; /* Ketebalan border 4px dan warna abu-abu */
+  display: flex;
+  box-sizing: border-box;
+  display: flex;
+}
+.btn-email {
+  background-color: #8797b2;
+  color: #ffff;
+  border: none; /* Menghapus garis tepi */
+  padding: 10px 20px; /* Menyesuaikan padding */
+  font-size: 16px; /* Menyesuaikan ukuran font */
+  font-weight: bold; /* Membuat teks tebal */
+  cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
+  transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+}
+
+.btn-email:hover {
+  background-color: #a7a5c6;
+  color: #ffffff;
+}
+
+.content-left {
+  width: 65%;
+  height: 100%;
+  padding: 30px;
+}
+.content-right {
+  width: 35%;
+  height: 100%;
+  padding: 30px;
+}
+.content-left {
+  /*border-right: 5px solid black; /* Garis pemisah antara bagian kiri dan kanan */
+  box-sizing: border-box;
+}
+.content-right {
+  box-sizing: border-box;
+}
+
+.profile-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff; /* Warna dan ketebalan border dapat disesuaikan */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efek bayangan untuk border */
+  align-items: center;
+}
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-p {
+  font-size: 15px;
+  color: white;
+}
+
+.blur-effect {
+  filter: blur(5px); /* Sesuaikan dengan kebutuhan efek blur yang diinginkan */
+  pointer-events: none; /* Mencegah interaksi pengguna dengan elemen di bawah efek blur */
+}
+
+/* percobaan */
+.popupBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.popupBox__content {
+  position: relative;
+  padding: 10px;
+  width: 1000px;
+  height: 600px;
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popupBox__img {
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupBox__img img {
+  width: 80%;
+}
+
+.popupBox__img::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #e7ffe0;
+  border-radius: 50%;
+}
+
+.popupBox__img img {
+  position: relative;
+  max-width: 450px;
+  z-index: 1;
+}
+
+.image-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 10px;
+  outline: none;
+}
+
+.popupBox__contentTwo {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  padding-right: 20px;
+  justify-content: left;
+  align-items: center;
+}
+
+.popupBox__contentTwo h6 {
+  font-size: medium;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5px;
+}
+
+.popupBox__title {
+  color: #6d8a96;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.popupBox__titleTwo {
+  font-size: 4em;
+  color: #6d8a96;
+  line-height: 1em;
+}
+
+.popupBox__titleTwo span,
+.popupBox__title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.popupBox__description {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.popupBox__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #6d8a96;
+  text-decoration: none;
+  color: #000;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3
+    url(https://www.pikpng.com/pngl/m/302-3024308_close-icon-png-x-png-icon-clipart.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .popupBox__content {
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+  }
+  .popupBox__img {
+    height: 200px;
+    transform: translateY(-50px);
+  }
+  .popupBox__contentTwo {
+    height: auto;
+    text-align: center;
+    padding-top: 0;
+  }
+  .popupBox__img::before {
+    background: #fff;
+  }
+  .close {
+    top: -50px;
+    right: -10px;
+    background: #fff url(./img/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+  }
+}
+
+/* responsif */
+
+/* Styling for small screens */
+@media screen and (max-width: 576px) {
+  .content-left {
+    padding: 0 10px;
+  }
+}

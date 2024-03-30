@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="border-container">
+      <div class="content-left">
+        <h1>Evi Lestari</h1>
+        <p class="custom-p">
+          Alumni UIN Maulana Malik Ibrahim Malang 2023, dengan gelar Sarjana
+          Teknik Informatika. Ketertarikan tinggi terhadap analisis kuantitatif
+          dalam jenjang karier sebagai Software Engineer dengan fokus saat ini
+          sebagai Front-end Developer. Saya mencari kesempatan untuk
+          berkontribusi dalam proyek-proyek perusahaan dan mengaplikasikan
+          pengetahuan serta fokus yang saya miliki.
+        </p>
+        <button type="button" class="btn-email">evilestari.hireme@gmail.com</button>
+
+        <!-- <div class="container"> -->
+        <div class="row">
+          <h5 class="mt-4">Daftar Project</h5>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <div class="content-project">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#" id="openPopup"
+                    >1. CIPTA NIRMALA GROUP RS SEMEN GRESIK KLINIK SEMEN GRESIK
+                    (PTCN)</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a href="#" id="openPopup2"
+                    >2. DINAS PENANAMAN MODAL PELAYANAN TERPADU SATU PINTU DAN
+                    TENAGA KERJA (DPMPTSP)
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" id="openPopup3"
+                    >3. Latansa Brownies (UMKM- Lumajang)</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a href="#" id="openPopup4">4. CRUD JavaScript</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" id="openPopup5"
+                    >5. CRUD database local XAMPP mysql dengan flutter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="content-right d-flex justify-content-end">
+        <div class="profile-container">
+          <img
+            class="profile-image"
+            src="images/sc_evi.png"
+            alt="Profil Foto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="popupBox" id="popupBox">
+      <div class="popupBox__content">
+        <div class="close" onclick="closePopup()"></div>
+        <div class="popupBox__img">
+          <img src="" alt="" id="popupBoximg" />
+        </div>
+
+        <div class="popupBox__contentTwo">
+          <div>
+            <h6 class="popupBox__title">
+              Project : <span id="popupBox__title"></span>
+            </h6>
+            <h6 class="popupBox__title">
+              Year : <span id="popupBox__year"></span>
+            </h6>
+            <h6 class="popupBox__title">
+              Role/Posisition : <span id="popupBox__role"></span>
+            </h6>
+            <h6 class="popupBox__title">Project Description :</h6>
+            <p class="popupBox__description" id="popupBox__description"></p>
+            <a href="#" class="popupBox__btn" id="popUplink" target="_blank"
+              >Publication Link
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="image-controls">
+        <button onclick="previousImage()" class="prev-btn">&#10094;</button>
+        <button onclick="nextImage()" class="next-btn">&#10095;</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+    <!-- Sisipkan Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
