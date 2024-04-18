@@ -260,22 +260,30 @@ li.list-group-item:hover {
   
 
   .popupBox__content {
-    width: 300px;
+    width: 400px;
     height: auto;
     flex-direction: column;
   }
   .popupBox__img {
-    height: 200px;
-    transform: translateY(-50px);
+    height: 190px;
+    transform: translateY(130px);
+    transform: translateX(-120px);
+
+  }
+
+  .popupBox__img img{
+    width: 50%;
   }
   .popupBox__contentTwo {
     height: auto;
     text-align: center;
     padding-top: 0;
   }
+
   .popupBox__img::before {
     background: #fff;
   }
+
   .close {
     top: -50px;
     right: -10px;
@@ -293,4 +301,5 @@ li.list-group-item:hover {
   .content-left {
     padding: 0 10px;
   }
+  
 }
