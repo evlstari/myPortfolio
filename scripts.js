@@ -144,18 +144,18 @@ document.addEventListener("keydown", function (event) {
 });
 
 document.getElementById("openPopup").addEventListener("click", function () {
-  openPopup(0, 0); // Buka popup untuk proyek pertama dengan gambar pertama
+  openPopup(0, 0); 
 });
 
 document.getElementById("openPopup2").addEventListener("click", function () {
-  openPopup(1, 0); // Buka popup untuk proyek kedua dengan gambar pertama
+  openPopup(1, 0); 
 });
 document.getElementById("openPopup3").addEventListener("click", function () {
-  openPopup(2, 0); // Buka popup untuk proyek kedua dengan gambar pertama
+  openPopup(2, 0); 
 });
 document.getElementById("openPopup4").addEventListener("click", function () {
-  openPopup(3, 0); // Buka popup untuk proyek kedua dengan gambar pertama
+  openPopup(3, 0); 
 });
 document.getElementById("openPopup5").addEventListener("click", function () {
-  openPopup(4, 0); // Buka popup untuk proyek kedua dengan gambar pertama
+  openPopup(4, 0); 
 });

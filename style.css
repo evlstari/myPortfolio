@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: azure;
   padding: 50px;
-  overflow: hidden;
+  overflow:auto;
   transition: background-color 0.5s ease;
 }
 
@@ -219,7 +219,46 @@ li.list-group-item:hover {
   cursor: pointer;
   border-radius: 50%;
 }
+
+/* responsif */
 @media (max-width: 768px) {
+  body{
+    padding: 5px;
+  }
+  .border-container{
+    padding: 0 0;
+  }
+  .content-right{
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
+  }
+  .profile-container {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff; /* Warna dan ketebalan border dapat disesuaikan */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efek bayangan untuk border */
+    align-items: center;
+  }
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content-left p{
+    font-size: 12px;
+    align-content: center;
+  }
+  .btn-email {
+    padding: 5px 15px; /* Menyesuaikan padding */
+    font-size: 12px; /* Menyesuaikan ukuran font */
+
+  }
+  
+
   .popupBox__content {
     width: 300px;
     height: auto;
