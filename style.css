@@ -13,15 +13,15 @@ li a {
 }
 
 li.list-group-item:hover {
-  background-color: azure; /* Warna latar belakang saat hover */
-  color: #333; /* Warna teks saat hover */
+  background-color: azure; 
+  color: #333; 
 }
 
 .border-container {
   padding: 80px;
-  width: 100%; /* Lebar border sama dengan lebar layar */
+  width: 100%; 
   height: 100%;
-  border: 4px solid white; /* Ketebalan border 4px dan warna abu-abu */
+  border: 4px solid white; 
   display: flex;
   box-sizing: border-box;
   display: flex;
@@ -29,12 +29,14 @@ li.list-group-item:hover {
 .btn-email {
   background-color: #8797b2;
   color: #ffff;
-  border: none; /* Menghapus garis tepi */
-  padding: 10px 20px; /* Menyesuaikan padding */
-  font-size: 16px; /* Menyesuaikan ukuran font */
-  font-weight: bold; /* Membuat teks tebal */
-  cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
-  transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+  border: none; 
+  margin-top: 10px;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+  border-radius: 10px;
 }
 
 .btn-email:hover {
@@ -46,7 +48,39 @@ li.list-group-item:hover {
   width: 65%;
   height: 100%;
   padding: 30px;
+  text-align: justify;
 }
+
+.btn-ig,
+.btn-github, .btn-linkedin, .btn-youtube {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background-color: transparent; 
+  border: none; 
+  margin-left: 15px;
+}
+
+/* Optional: Atur warna ikon */
+.btn-ig i,
+.btn-github i , .btn-linkedin i, .btn-youtube i{
+  color: black;
+}
+
+.btn-ig :hover,
+.btn-github :hover, .btn-linkedin:hover , .btn-youtube:hover {
+  background-color: azure;
+  padding: 5px 5px;
+  border-radius: 50%;
+}
+
+/* Optional: Atur ukuran ikon */
+.btn-ig i,
+.btn-github i , .btn-linkedin, .btn-youtube{
+  font-size: 24px;
+}
+
+
 .content-right {
   width: 35%;
   height: 100%;
@@ -74,6 +108,7 @@ li.list-group-item:hover {
   height: 100%;
   object-fit: cover;
 }
+
 
 .custom-p {
   font-size: 15px;
@@ -113,6 +148,7 @@ li.list-group-item:hover {
   justify-content: center;
   align-items: center;
 }
+
 .popupBox__img img {
   width: 80%;
 }
@@ -231,9 +267,12 @@ li.list-group-item:hover {
   .content-right{
     flex-direction: column;
     padding: 0 10px;
-    align-items: center;
+    align-items: justify;
   }
+
   .profile-container {
+    position: relative;
+    display: flex;
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -241,7 +280,9 @@ li.list-group-item:hover {
     border: 2px solid #fff; /* Warna dan ketebalan border dapat disesuaikan */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Efek bayangan untuk border */
     align-items: center;
+    justify-content: center;
   }
+  
   .profile-image {
     width: 100%;
     height: 100%;
@@ -257,43 +298,159 @@ li.list-group-item:hover {
     font-size: 12px; /* Menyesuaikan ukuran font */
 
   }
+
+  .btn-ig,
+.btn-github, .btn-linkedin, .btn-youtube {
+  /* width: 40px; 
+  height: 40px;  */
+  border-radius: 50%; 
+  background-color: transparent; 
+  border: none; 
+  margin-left: 10px;
+}
+
+  .btn-ig i,
+.btn-github i, .btn-linkedin i, .btn-youtube i{
+  font-size: 20pxpx;
+}
+
+  .popupBox {
+    /* position: fixed; */
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+  }
   
-
   .popupBox__content {
-    width: 400px;
-    height: auto;
-    flex-direction: column;
-  }
-  .popupBox__img {
-    height: 190px;
-    transform: translateY(130px);
-    transform: translateX(-120px);
-
-  }
-
-  .popupBox__img img{
-    width: 50%;
-  }
-  .popupBox__contentTwo {
-    height: auto;
-    text-align: center;
-    padding-top: 0;
-  }
-
-  .popupBox__img::before {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    width: 1000px; /* Tetap 1000px di layar besar */
+    max-width: calc(100% - 40px); /* Menambahkan batasan lebar maksimum */
+    height: 600px;
     background: #fff;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
+  
+  .popupBox__contentTwo {
+    position: relative;
+    padding-left: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .popupBox__content {
+      width: 90%; /* Mengurangi lebar di layar kecil */
+      max-width: 100%; /* Menghapus batasan lebar maksimum */
+      height: auto; /* Menggunakan tinggi konten yang sesuai */
+      flex-direction: column; /* Mengubah menjadi kolom di layar kecil */
+      align-items: start; 
+    }
+  
+    .popupBox__contentTwo {
+      width: 90%; 
+      max-width: 100%; 
+      height: auto; 
+      flex-direction: column; 
+      align-items: start; 
+    }
+  }
+  
+  .popupBox__img {
+    position: relative;
+    width: 600px; /* Tetap 600px di layar besar */
+    max-width: 100%; /* Mengikuti lebar parent */
+    max-height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popupBox__img img {
+    width: 60%;
+    height: auto;
+    max-width: 100%; /* Mengikuti lebar parent */
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .popupBox__img::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #e7ffe0;
+    border-radius: 50%;
+  }
+  
+  .popupBox__title h6,
+  .popupBox__titleTwo {
+    color: #6d8a96;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: center; /* Memusatkan teks */
+  }
+  
+  .popupBox__titleTwo {
+    font-size: 10px;
+  }
+  
+  .popupBox__titleTwo span,
+  .popupBox__title span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  .popupBox__description {
+    font-weight: 300;
+    font-size: 10px;
+    text-align: justify; 
+  }
+  
+  .popupBox__btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #6d8a96;
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
   .close {
-    top: -50px;
-    right: -10px;
-    background: #fff url(./img/close.png);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3
+      url(https://www.pikpng.com/pngl/m/302-3024308_close-icon-png-x-png-icon-clipart.png);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
   }
+  
 }
-
 /* responsif */
 
 /* Styling for small screens */

@@ -1,5 +1,5 @@
 // Daftar warna yang akan digunakan
-const colors = ["#A7A5C6", "##8797B2", "#6D8A96", "#5D707F", "#66CED6"];
+const colors = ["#A7A5C6", "#8797B2", "#6D8A96", "#5D707F", "#66CED6"];
 let index = 0;
 
 // Fungsi untuk mengubah warna latar belakang setiap beberapa detik
