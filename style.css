@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: azure;
   padding: 50px;
-  overflow:auto;
+  overflow: auto;
   transition: background-color 0.5s ease;
 }
 
@@ -13,29 +13,32 @@ li a {
 }
 
 li.list-group-item:hover {
-  background-color: azure; 
-  color: #333; 
+  background-color: azure;
+  color: #333;
 }
 
 .border-container {
   padding: 80px;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  border: 4px solid white; 
+  border: 4px solid white;
   display: flex;
   box-sizing: border-box;
   display: flex;
 }
 .btn-email {
+  text-decoration: none;
+}
+.btn-email {
   background-color: #8797b2;
   color: #ffff;
-  border: none; 
+  border: none;
   margin-top: 10px;
-  padding: 10px 20px; 
-  font-size: 16px; 
-  font-weight: bold; 
-  cursor: pointer; 
-  transition: background-color 0.3s, color 0.3s; 
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
   border-radius: 10px;
 }
 
@@ -52,23 +55,29 @@ li.list-group-item:hover {
 }
 
 .btn-ig,
-.btn-github, .btn-linkedin, .btn-youtube {
-  width: 40px; 
-  height: 40px; 
-  border-radius: 50%; 
-  background-color: transparent; 
-  border: none; 
+.btn-github,
+.btn-linkedin,
+.btn-youtube {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
   margin-left: 15px;
 }
 
 /* Optional: Atur warna ikon */
 .btn-ig i,
-.btn-github i , .btn-linkedin i, .btn-youtube i{
+.btn-github i,
+.btn-linkedin i,
+.btn-youtube i {
   color: black;
 }
 
 .btn-ig :hover,
-.btn-github :hover, .btn-linkedin:hover , .btn-youtube:hover {
+.btn-github :hover,
+.btn-linkedin:hover,
+.btn-youtube:hover {
   background-color: azure;
   padding: 5px 5px;
   border-radius: 50%;
@@ -76,10 +85,11 @@ li.list-group-item:hover {
 
 /* Optional: Atur ukuran ikon */
 .btn-ig i,
-.btn-github i , .btn-linkedin, .btn-youtube{
+.btn-github i,
+.btn-linkedin,
+.btn-youtube {
   font-size: 24px;
 }
-
 
 .content-right {
   width: 35%;
@@ -108,7 +118,6 @@ li.list-group-item:hover {
   height: 100%;
   object-fit: cover;
 }
-
 
 .custom-p {
   font-size: 15px;
@@ -258,13 +267,13 @@ li.list-group-item:hover {
 
 /* responsif */
 @media (max-width: 768px) {
-  body{
+  body {
     padding: 5px;
   }
-  .border-container{
+  .border-container {
     padding: 0 0;
   }
-  .content-right{
+  .content-right {
     flex-direction: column;
     padding: 0 10px;
     align-items: justify;
@@ -282,37 +291,40 @@ li.list-group-item:hover {
     align-items: center;
     justify-content: center;
   }
-  
+
   .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .content-left p{
+  .content-left p {
     font-size: 12px;
     align-content: center;
   }
   .btn-email {
     padding: 5px 15px; /* Menyesuaikan padding */
     font-size: 12px; /* Menyesuaikan ukuran font */
-
   }
 
   .btn-ig,
-.btn-github, .btn-linkedin, .btn-youtube {
-  /* width: 40px; 
+  .btn-github,
+  .btn-linkedin,
+  .btn-youtube {
+    /* width: 40px; 
   height: 40px;  */
-  border-radius: 50%; 
-  background-color: transparent; 
-  border: none; 
-  margin-left: 10px;
-}
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+  }
 
   .btn-ig i,
-.btn-github i, .btn-linkedin i, .btn-youtube i{
-  font-size: 20pxpx;
-}
+  .btn-github i,
+  .btn-linkedin i,
+  .btn-youtube i {
+    font-size: 20pxpx;
+  }
 
   .popupBox {
     /* position: fixed; */
@@ -323,9 +335,8 @@ li.list-group-item:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    
   }
-  
+
   .popupBox__content {
     position: relative;
     padding: 10px;
@@ -338,35 +349,35 @@ li.list-group-item:hover {
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  
+
   .popupBox__contentTwo {
     position: relative;
     padding-left: 20px;
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   @media screen and (max-width: 768px) {
     .popupBox__content {
       width: 90%; /* Mengurangi lebar di layar kecil */
       max-width: 100%; /* Menghapus batasan lebar maksimum */
       height: auto; /* Menggunakan tinggi konten yang sesuai */
       flex-direction: column; /* Mengubah menjadi kolom di layar kecil */
-      align-items: start; 
+      align-items: start;
     }
-  
+
     .popupBox__contentTwo {
-      width: 90%; 
-      max-width: 100%; 
-      height: auto; 
-      flex-direction: column; 
-      align-items: start; 
+      width: 90%;
+      max-width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: start;
     }
   }
-  
+
   .popupBox__img {
     position: relative;
     width: 600px; /* Tetap 600px di layar besar */
@@ -377,7 +388,7 @@ li.list-group-item:hover {
     justify-content: center;
     align-items: center;
   }
-  
+
   .popupBox__img img {
     width: 60%;
     height: auto;
@@ -385,7 +396,7 @@ li.list-group-item:hover {
     max-height: 100%;
     object-fit: contain;
   }
-  
+
   .popupBox__img::before {
     content: "";
     position: absolute;
@@ -394,7 +405,7 @@ li.list-group-item:hover {
     background: #e7ffe0;
     border-radius: 50%;
   }
-  
+
   .popupBox__title h6,
   .popupBox__titleTwo {
     color: #6d8a96;
@@ -403,11 +414,11 @@ li.list-group-item:hover {
     font-size: 10px;
     text-align: center; /* Memusatkan teks */
   }
-  
+
   .popupBox__titleTwo {
     font-size: 10px;
   }
-  
+
   .popupBox__titleTwo span,
   .popupBox__title span {
     white-space: nowrap;
@@ -417,13 +428,13 @@ li.list-group-item:hover {
     font-size: 10px;
     text-transform: uppercase;
   }
-  
+
   .popupBox__description {
     font-weight: 300;
     font-size: 10px;
-    text-align: justify; 
+    text-align: justify;
   }
-  
+
   .popupBox__btn {
     display: inline-block;
     padding: 5px 10px;
@@ -433,7 +444,7 @@ li.list-group-item:hover {
     margin-top: 10px;
     border-radius: 10px;
   }
-  
+
   .close {
     position: absolute;
     top: 20px;
@@ -449,7 +460,6 @@ li.list-group-item:hover {
     cursor: pointer;
     border-radius: 50%;
   }
-  
 }
 /* responsif */
 
@@ -458,5 +468,4 @@ li.list-group-item:hover {
   .content-left {
     padding: 0 10px;
   }
-  
 }
