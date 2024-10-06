@@ -27,9 +27,8 @@ li.list-group-item:hover {
   display: flex;
 }
 .btn-email {
-  text-decoration: none;
 }
-.btn-email {
+.btn-email button {
   background-color: #8797b2;
   color: #ffff;
   border: none;
