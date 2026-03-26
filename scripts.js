@@ -88,6 +88,17 @@ const projects = [
     ],
     link: "https://github.com/evlstari/CRUD-mysqli-with-flutter",
   },
+  {
+    title: "Bug Report Testing Fitur pada Applikasi Mobile",
+    year: "2025",
+    role: "Quality Assurance Specialist",
+    description:
+      "Project ini merupakan salah satu task saya sewaktu bekerja sebagai Quality Assurance Specialist. Report temuan Bug pada fitur sebelum di rilis ke end User",
+    images: [
+      "images/p6_1",
+    ],
+    link: "https://docs.google.com/spreadsheets/d/19A5BQViC8TpxSa62ULjxixthkb2o4ANT/edit?gid=178518924#gid=178518924",
+  },
 ];
 
 const popupBox = document.getElementById("popupBox");
@@ -158,4 +169,7 @@ document.getElementById("openPopup4").addEventListener("click", function () {
 });
 document.getElementById("openPopup5").addEventListener("click", function () {
   openPopup(4, 0); 
+});
+document.getElementById("openPopup6").addEventListener("click", function () {
+  openPopup(5, 0); 
 });
