@@ -3,7 +3,7 @@ body {
   background-color: azure;
   padding: 50px;
   overflow: auto;
-  transition: background-color 1.0s ease;
+  transition: background-color 2.0s ease;
 }
 
 li a {
