@@ -96,6 +96,7 @@ const projects = [
       "Project ini merupakan salah satu task saya sewaktu bekerja sebagai Quality Assurance Specialist. Report temuan Bug pada fitur sebelum di rilis ke end User",
     images: [
       "images/p6_1.png",
+      "images/p6_1.png"
     ],
     link: "https://docs.google.com/spreadsheets/d/19A5BQViC8TpxSa62ULjxixthkb2o4ANT/edit?gid=178518924#gid=178518924",
   },
